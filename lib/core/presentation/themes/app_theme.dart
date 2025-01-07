@@ -67,7 +67,7 @@ class AppTheme {
           foregroundColor: WidgetStateProperty.all(_appColorScheme.whiteColor),
           elevation: WidgetStateProperty.all(0),
           backgroundColor: WidgetStateProperty.all<Color>(
-            _appColorScheme.primaryColor,
+            _appColorScheme.blackColor,
           ),
           padding: const WidgetStatePropertyAll(
               EdgeInsets.symmetric(vertical: 16, horizontal: 12)),
@@ -103,14 +103,14 @@ class AppTheme {
         style: ButtonStyle(
           side: WidgetStateProperty.all<BorderSide>(
             BorderSide(
-              color: _appColorScheme.primaryColor,
+              color: _appColorScheme.blackColor,
             ),
           ),
           padding: const WidgetStatePropertyAll(
               EdgeInsets.symmetric(vertical: 16, horizontal: 12)),
           shape: WidgetStateProperty.all<OutlinedBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(100),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
         ),
@@ -121,7 +121,7 @@ class AppTheme {
               fontSize: 16,
               fontWeight: FontWeight.w400,
             ),
-        labelStyle: Theme.of(context).textTheme.bodyLarge!.copyWith(
+        labelStyle: Theme.of(context).textTheme.bodySmall!.copyWith(
               fontWeight: FontWeight.w400,
               color: _appColorScheme.darkGreyColor,
             ),

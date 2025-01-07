@@ -8,7 +8,7 @@ class UpdateTaskUseCase {
 
   UpdateTaskUseCase({required this.repository});
 
-  List<Tasks>? call(Tasks params) {
-    return repository.updateTask(params);
+  void call({required Tasks params, required int index}) {
+    return repository.updateTask(updatedTask: params, index: index);
   }
 }

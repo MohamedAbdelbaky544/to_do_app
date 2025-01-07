@@ -5,6 +5,17 @@
   "description": "description",
   "title": "title",
   "completed": "Completed",
-  "unCompleted": "UnCompleted",
-  "thereIsNoTasksYet": "There is no Tasks yet"
+  "unCompleted": "InCompleted",
+  "thereIsNoTasksYet": "There is no Tasks yet",
+  "edit": "Edit",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "save": "Save",
+  "confirm": "Confirm",
+  "enterTitle": "Enter Title",
+  "enterDescription": "Enter description",
+  "thisFieldIsRequired": "This field is required",
+  "addTask": "Add Task",
+  "updateTask": "Update task",
+  "taskStatus":"Task Status"
 }

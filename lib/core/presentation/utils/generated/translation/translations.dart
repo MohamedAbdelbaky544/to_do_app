@@ -132,7 +132,7 @@ abstract class Translations {
   /// No description provided for @unCompleted.
   ///
   /// In en, this message translates to:
-  /// **'UnCompleted'**
+  /// **'InCompleted'**
   String get unCompleted;
 
   /// No description provided for @thereIsNoTasksYet.
@@ -140,6 +140,72 @@ abstract class Translations {
   /// In en, this message translates to:
   /// **'There is no Tasks yet'**
   String get thereIsNoTasksYet;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// No description provided for @enterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Title'**
+  String get enterTitle;
+
+  /// No description provided for @enterDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter description'**
+  String get enterDescription;
+
+  /// No description provided for @thisFieldIsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String get thisFieldIsRequired;
+
+  /// No description provided for @addTask.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Task'**
+  String get addTask;
+
+  /// No description provided for @updateTask.
+  ///
+  /// In en, this message translates to:
+  /// **'Update task'**
+  String get updateTask;
+
+  /// No description provided for @taskStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Task Status'**
+  String get taskStatus;
 }
 
 class _TranslationsDelegate extends LocalizationsDelegate<Translations> {

@@ -9,13 +9,9 @@ abstract class ToDoDataSource {
     required TaskModel newTask,
   });
 
-  List<TaskModel>? deleteTask({
-    required TaskModel task,
-  });
+  void deleteTask({required int index});
 
-  List<TaskModel>? updateTask({
-    required TaskModel updatedTask,
-  });
+  void updateTask({required TaskModel updatedTask, required int index});
 }
 
 @LazySingleton(as: ToDoDataSource)
@@ -24,7 +20,7 @@ class ToDoDataSourceImpl implements ToDoDataSource {
 
   @override
   List<TaskModel>? getAllTasks() {
-    return hive.values.toList().reversed.toList();
+    return hive.values.toList();
   }
 
   @override
@@ -33,15 +29,14 @@ class ToDoDataSourceImpl implements ToDoDataSource {
   }
 
   @override
-  List<TaskModel>? deleteTask({required TaskModel task}) {
-    hive.values.toList().removeWhere((e) => e == task);
-    return hive.values.toList().reversed.toList();
+  void deleteTask({required int index}) {
+    hive.deleteAt(index);
+    // return hive.values.toList();
   }
 
   @override
-  List<TaskModel>? updateTask({required TaskModel updatedTask}) {
-    hive.values.toList().removeWhere((e) => e.id == updatedTask.id);
-    addTask(newTask: updatedTask);
-    return hive.values.toList().reversed.toList();
+  void updateTask({required TaskModel updatedTask, required int index}) {
+    hive.putAt(index, updatedTask);
+    // return hive.values.toList();
   }
 }

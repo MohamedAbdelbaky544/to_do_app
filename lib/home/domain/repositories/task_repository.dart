@@ -4,7 +4,7 @@ import 'package:to_do_app/home/domain/entities/tasks.dart';
 
 abstract class TaskRepository {
   Future<Either<Failure, Unit>> addTask(Tasks newTask);
-  List<Tasks>? updateTask(Tasks updatedTask);
-  List<Tasks>? deleteTask(Tasks deleteTask);
+  void updateTask({required Tasks updatedTask, required int index});
+  void deleteTask({required int index});
   List<Tasks>? getTasks();
 }

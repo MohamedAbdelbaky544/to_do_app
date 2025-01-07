@@ -17,13 +17,8 @@ class TaskRepositoryImpl implements TaskRepository {
   }
 
   @override
-  List<Tasks>? deleteTask(Tasks deleteTask) {
-    List<TaskModel>? request = local.deleteTask(task: deleteTask.fromDomain());
-    if (request != null) {
-      return request.map((e) => e.toDomain()).toList();
-    } else {
-      return null;
-    }
+  void deleteTask({required int index}) {
+    local.deleteTask(index: index);
   }
 
   @override
@@ -37,13 +32,7 @@ class TaskRepositoryImpl implements TaskRepository {
   }
 
   @override
-  List<Tasks>? updateTask(Tasks updatedTask) {
-    List<TaskModel>? request =
-        local.updateTask(updatedTask: updatedTask.fromDomain());
-    if (request != null) {
-      return request.map((e) => e.toDomain()).toList();
-    } else {
-      return null;
-    }
+  void updateTask({required Tasks updatedTask, required int index}) {
+    local.updateTask(updatedTask: updatedTask.fromDomain(), index: index);
   }
 }

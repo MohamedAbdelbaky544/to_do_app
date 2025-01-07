@@ -25,8 +25,41 @@ class TranslationsEn extends Translations {
   String get completed => 'Completed';
 
   @override
-  String get unCompleted => 'UnCompleted';
+  String get unCompleted => 'InCompleted';
 
   @override
   String get thereIsNoTasksYet => 'There is no Tasks yet';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get enterTitle => 'Enter Title';
+
+  @override
+  String get enterDescription => 'Enter description';
+
+  @override
+  String get thisFieldIsRequired => 'This field is required';
+
+  @override
+  String get addTask => 'Add Task';
+
+  @override
+  String get updateTask => 'Update task';
+
+  @override
+  String get taskStatus => 'Task Status';
 }
