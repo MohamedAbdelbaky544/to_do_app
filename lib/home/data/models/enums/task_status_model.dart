@@ -8,7 +8,7 @@ enum TaskStatusModel {
   @HiveField(0)
   completed,
   @HiveField(1)
-  uncompleted,
+  inCompleted,
 }
 
 extension MapToDomain on TaskStatusModel {

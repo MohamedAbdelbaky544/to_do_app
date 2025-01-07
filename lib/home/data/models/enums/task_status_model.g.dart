@@ -18,7 +18,7 @@ class TaskStatusModelAdapter extends TypeAdapter<TaskStatusModel> {
       case 0:
         return TaskStatusModel.completed;
       case 1:
-        return TaskStatusModel.uncompleted;
+        return TaskStatusModel.inCompleted;
       default:
         return TaskStatusModel.completed;
     }
@@ -30,7 +30,7 @@ class TaskStatusModelAdapter extends TypeAdapter<TaskStatusModel> {
       case TaskStatusModel.completed:
         writer.writeByte(0);
         break;
-      case TaskStatusModel.uncompleted:
+      case TaskStatusModel.inCompleted:
         writer.writeByte(1);
         break;
     }

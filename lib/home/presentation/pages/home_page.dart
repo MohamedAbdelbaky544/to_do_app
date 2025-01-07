@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   final DeleteTaskCubit deleteTaskCubit = getIt<DeleteTaskCubit>();
 
   int completed = 0;
-  int uncompleted = 0;
+  int inCompleted = 0;
 
   @override
   void initState() {
@@ -84,12 +84,12 @@ class _HomePageState extends State<HomePage> {
             bloc: getAllTasksCubit,
             listener: (context, state) {
               if (state.isSuccess) {
-                completed = uncompleted = 0;
+                completed = inCompleted = 0;
                 for (var item in state.item ?? []) {
                   if (item.status == TaskStatus.completed) {
                     completed += 1;
                   } else {
-                    uncompleted += 1;
+                    inCompleted += 1;
                   }
                 }
                 setState(() {});
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                             containerColor:
                                 const Color(0xff908986).withOpacity(0.1),
                             title: tr.unCompleted,
-                            data: uncompleted.toString(),
+                            data: inCompleted.toString(),
                             iconPath: Assets.icons.unCompleted.path),
                       ),
                     ],
@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  (state.item == null || state.item?.length == 0)
+                  (state.item == null || state.item!.isEmpty)
                       ? Column(
                           children: [
                             const SizedBox(
@@ -451,6 +451,7 @@ class _TasksCardInfo extends StatelessWidget {
             height: 16,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Flexible(
                 child: Text(

@@ -28,7 +28,7 @@ class _AddEditBottomSheetState extends State<AddEditBottomSheet> {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController descriptionController = TextEditingController();
   final GlobalKey<FormState> _key = GlobalKey<FormState>();
-  TaskStatus status = TaskStatus.uncompleted;
+  TaskStatus status = TaskStatus.inCompleted;
   @override
   void initState() {
     if (widget.tasks != null) {

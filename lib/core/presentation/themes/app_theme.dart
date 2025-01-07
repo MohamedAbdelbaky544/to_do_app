@@ -117,17 +117,17 @@ class AppTheme {
       ),
       inputDecorationTheme: InputDecorationTheme(
         hintStyle: Theme.of(context).textTheme.labelSmall!.copyWith(
-              color: _appColorScheme.greyColorForBorder,
+              color: _appColorScheme.blackColor,
               fontSize: 16,
               fontWeight: FontWeight.w400,
             ),
         labelStyle: Theme.of(context).textTheme.bodySmall!.copyWith(
               fontWeight: FontWeight.w400,
-              color: _appColorScheme.darkGreyColor,
+              color: _appColorScheme.blackColor,
             ),
         border: OutlineInputBorder(
           borderSide: BorderSide(
-            color: _appColorScheme.greyColor,
+            color: _appColorScheme.blackColor,
           ),
           borderRadius: const BorderRadius.all(
             Radius.circular(8),
@@ -135,7 +135,7 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
-            color: _appColorScheme.primaryColor,
+            color: _appColorScheme.blackColor,
           ),
           borderRadius: const BorderRadius.all(
             Radius.circular(8),
@@ -171,9 +171,9 @@ class AppTheme {
         titleTextStyle: Theme.of(context)
             .textTheme
             .titleLarge!
-            .copyWith(color: _appColorScheme.blackTitleColor),
+            .copyWith(color: _appColorScheme.blackColor),
         contentTextStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: _appColorScheme.grey,
+              color: _appColorScheme.blackColor,
             ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(28),
