@@ -1,0 +1,10 @@
+{
+  "toDoApp": "To Do App",
+  "tasks": "Tasks",
+  "createdAt": "createdAt",
+  "description": "description",
+  "title": "title",
+  "completed": "Completed",
+  "unCompleted": "UnCompleted",
+  "thereIsNoTasksYet": "There is no Tasks yet"
+}
