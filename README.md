@@ -14,7 +14,7 @@ This Flutter project, named To_do_app Assignment, is a mobile application design
 
 ## Screenshots
 ![Screenshot_1736274845](https://github.com/user-attachments/assets/6510486b-a1ee-4785-b801-8b5aed168850)
-![Screenshot_1736274880](https://github.com/user-attachments/assets/ba1184c5-0afa-44b5-85ec-700f0067232d)
+![Screenshot_1736276800](https://github.com/user-attachments/assets/d27887de-30c0-4f20-a903-23129df62ba9)
 ![Screenshot_1736274880](https://github.com/user-attachments/assets/c31f418a-57c2-441f-b8a5-17577c729e8c)
 
 # to_do_app
